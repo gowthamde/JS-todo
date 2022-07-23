@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="todo.css" />
+        <script src="todo.js"></script>
+    </head>
+    <body>
+        <h1 class="text-center">ToDo App</h1>
+        <div class="container text-center">
+            <form>
+                <div class="input-box">
+                    <label for="taskName">Task Name :</label>
+                    <input id="taskName" type="text"/>
+                </div>
+                <div class="input-box">
+                    <label for="taskDate">Task Date :</label>
+                    <input id="taskDate" type="date"/>
+                </div>
+                <div class="input-box">
+                    <button type="submit" class="btn" onclick="event.preventDefault(); addItem()">ADD TODO</button>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+        <h1 class="text-center">ToDo List</h1>
+            <ul id="list-box">
+            </ul>
+        </div>
+    </body>
+</html>
